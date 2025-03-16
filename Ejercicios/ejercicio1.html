@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+   <nav>
+    <a href="../index.html"><img width="100px" src="https://munijuli.gob.pe/wp-content/uploads/2021/04/boton-regresar.png" alt=""></a>
+   </nav>
+
+   <div>
+        <form action="ejercicio1.php" method="post">
+            <!--Instrucciones:
+            Solicitar DPI, nombre, apellido, género, fecha de nacimiento y correo electrónico de una persona y al dar clic en un
+            botón deberá mostrar en una tabla datos ingresados, como se observa a continuación.
+            -->
+            <label for="txt_DPI">DPI:</label>
+            <input type="Text" name="txt_DPI" id="txt_DPI">
+            <br>
+
+            <label for="txt_nombre">Nombre:</label>
+            <input type="Text" name="txt_nombre" id="txt_nombre" placeholder="Nombres">
+            <br>
+
+            <label for="txt_pellido">Apellido:</label>
+            <input type="text" name="txt_apellido" id="txt_apellido" placeholder="Apellidos">
+            <br>
+
+            <label for="opt_genero">Genero:</label>
+            <br>
+            <input type="radio" name="opt_genero" id="opt_femenino" value="Femenino">
+            <label for="">Femenino</label>
+            <input type="radio" name="opt_genero" id="opt_masculino" value ="Masculino">
+            <label for="">Masculino</label>
+            <input type="radio" name="opt_genero" id="opt_otro" value="Otro">
+            <label for="">Otro</label>
+            <br>
+
+            <label for="txt_fecha">Fecha:</label>
+            <input type="date" name="txt_fecha" id="txt_fecha">
+            <br>
+            
+            <label for="txt_correo">Correo electronico:</label>
+            <input type="email" name="txt_correo" id="txt_correo" placeholder="Correo electronico">
+            <br>
+
+            <br>
+            <input type="submit" value="Guardar Datos" name="btn_enviar" id="btn_enviar">
+        
+        </form>
+   </div>
+
+   <footer></footer>
+</body>
+</html>
